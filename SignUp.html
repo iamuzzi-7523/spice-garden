@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Spice Garden</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        width: 80%;
+        max-width: 1000px;
+        height: 600px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(8px);
+      }
+
+      .image-side {
+        flex: 1;
+        background: url("./images/Chef's/Chef_2/Chef_211.png") center/cover
+          no-repeat;
+      }
+
+      .form-side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: #111;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+      }
+
+      .form-side h1 {
+        color: orange;
+        font-size: 2.5rem;
+        font-family: "Permanent Marker", cursive;
+        margin-bottom: 25px;
+      }
+
+      form {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      input {
+        padding: 12px 15px;
+        border: 1px solid #aaa;
+        border-radius: 25px;
+        font-size: 1rem;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: all 0.3s ease;
+      }
+
+      input:focus {
+        border-color: black;
+        background-color: white;
+      }
+
+      button {
+        background: #090909;
+        color: #f9f5f5;
+        padding: 12px 0;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background: rgb(248, 246, 246);
+        color: rgb(12, 12, 12);
+        border: 1px solid black;
+        transform: scale(1.03);
+      }
+
+      .login-text {
+        margin-top: 20px;
+        font-size: 0.95rem;
+        color: #111;
+      }
+
+      .login-text a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      .login-text a:hover {
+        border-bottom: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="image-side"></div>
+
+      <div class="form-side">
+        <h1>Sign Up</h1>
+        <form>
+          <input type="text" placeholder="Enter Username" required />
+          <input type="email" placeholder="Enter Email" required />
+          <input type="password" placeholder="Enter Password" required />
+          <input type="password" placeholder="Confirm Password" required />
+          <button type="submit">Sign Up</button>
+        </form>
+        <p class="login-text">
+          Already Registered? <a href="Login.html">Login</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

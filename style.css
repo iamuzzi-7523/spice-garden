@@ -1,0 +1,171 @@
+/* === General Page Setup === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: url("images/bg.jpg") center/cover no-repeat fixed;
+  /* background-color: aqua; */
+  min-height: 100vh;
+  display: flex;
+  scroll-behavior: smooth;
+  flex-direction: column;
+}
+
+/* === Header Styling === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.profile-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  min-width: 180px;
+  z-index: 20;
+}
+
+.profile-menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 6px 0;
+  font-weight: bold;
+}
+
+.dropdown a:hover {
+  color: orange;
+}
+
+/* === Navigation (Left Side) === */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline hover effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* === Signup Button (Right Side) === */
+.signup-btn {
+  background: black;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn {
+  background: orange;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  font-style: normal;
+  margin-top: 25px;
+  margin-left: 30%;
+}
+
+.cta-btn:hover {
+  background: white;
+  color: orange;
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.signup-btn:hover {
+  background: #fefdfd;
+  color: black;
+  border: 1px solid black;
+  border: 1 px solid black;
+  transform: scale(1.05);
+}
+
+/* === Main Content Area === */
+main {
+  flex: 1;
+  padding: 120px 60px 40px; /* space for fixed header */
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.Spice_Garden {
+  color: orange;
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  font-style: normal;
+}
